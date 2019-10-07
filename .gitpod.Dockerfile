@@ -11,3 +11,8 @@ USER root
 #
 # More information: https://www.gitpod.io/docs/42_config_docker/
 RUN curl https://cli-assets.heroku.com/install.sh | sh
+
+USER gitpod
+ENV XDG_CACHE_HOME=/workspace/.cache
+
+USER root
